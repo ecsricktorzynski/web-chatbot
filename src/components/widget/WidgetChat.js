@@ -1,4 +1,5 @@
 import Widget from "rasa-webchat";
+import './WidgetChat.css'
 
 function WidgetChat() {
   const handleKeyDown = (e) => {
@@ -22,6 +23,7 @@ function WidgetChat() {
         displayUnreadCount={true}
         showMessageDate={true}
         storage="session"
+        profileAvatar="./assets/svg/avatar.png"
       />
     </div>
   );

@@ -1,11 +1,11 @@
 import "./App.css";
-import WidgetChat from './widget/WidgetChat'
+import WidgetChat from './components/widget/WidgetChat'
 
 function App() {
   return (
     <div className="app-chat">
       chatbot
-      <WidgetChat />  
+      <WidgetChat />
     </div>
   );
 }
