@@ -1,22 +1,30 @@
 import "./App.css";
-import Widget from 'rasa-webchat'
+import Widget from "rasa-webchat";
 
 function App() {
-  return (
-    <div className="app-chat">
-      chatbot
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      try {
+        document.querySelector(".rw-send").click();
+      } catch (e) {
+        console.log(e);
+      }
+    }
+  };
 
+  return (
+    <div className="app-chat" onKeyDown={handleKeyDown}>
+      chatbot
       <Widget
-        initPayload={"/get_started"}
-        socketUrl={"http://localhost:5005"}
-        socketPath={"/socket.io/"}
-        customData={{language: "en"}}
-        title={"Restaurant"}
-        showFullScreenButton={true}
+        initPayload="/greet"
+        customData={{ language: "en" }}
+        socketUrl="http://localhost:5005"
+        title="Restaurant"
+        showFullScreenButton={true} 
         displayUnreadCount={true}
         showMessageDate={true}
         storage="session"
-      />
+      />  
     </div>
   );
 }
