@@ -9,3 +9,9 @@
 .rw-launcher{
     background-color: #3e3e69;
 }
+
+.rw-replies .rw-reply{
+    background-color: #3e3e69;
+    border: #3e3e69 1px solid;
+    color: white;
+}
