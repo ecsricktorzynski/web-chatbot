@@ -2,8 +2,6 @@
 
 Clean React app with chatbot rasa-webchat package
 
-![webchat screanshot](./docs/chat-view.PNG)
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## `npm start`
