@@ -18,12 +18,12 @@ function WidgetChat() {
         initPayload="/greet"
         customData={{ language: "en" }}
         socketUrl="http://localhost:5005"
-        title="Restaurant"
+        title="Dropbot"
         showFullScreenButton={true}
         displayUnreadCount={true}
         showMessageDate={true}
         storage="session"
-        profileAvatar="./assets/svg/avatar.png"
+        profileAvatar="./assets/svg/drupalbot.png"
       />
     </div>
   );
